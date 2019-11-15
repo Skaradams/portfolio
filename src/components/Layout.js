@@ -10,7 +10,18 @@ const Layout = ({ children }) => (
       </div>
       <div className="layout-navigation column">
         <div className="layout-menu row">
-
+          <div className="no-flex active">
+            Présentation
+          </div>
+          <div className="no-flex">
+            Parcours
+          </div>
+          <div className="no-flex">
+            Réalisations
+          </div>
+          <div className="no-flex">
+            Contact
+          </div>
         </div>
         <div className="layout-info">
           <h1>
