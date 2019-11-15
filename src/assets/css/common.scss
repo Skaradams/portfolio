@@ -1,3 +1,23 @@
 body {
+  font-size: 16px;
   font-family: "Raleway";
+}
+
+.row, .column {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+  &> * {
+    flex-grow: 1;
+  }
+}
+
+.column {
+  flex-direction: column;
+}
+
+.no-flex {
+  flex: none;
 }

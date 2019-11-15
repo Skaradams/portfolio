@@ -1,0 +1,21 @@
+.layout-header {
+  background: $dark-blue;
+  padding: 0.5em;
+  .profile-picture {
+    img {
+      // clip-path: circle(50% at 50% 50%);
+      border-radius: 10em;
+      border: 4px solid $white;
+      z-index: 0;
+      width: 10em;
+      overflow: hidden;
+    }
+  }
+  .layout-navigation {
+    .layout-info {
+      padding-left: 1em;
+      padding-top: 1em;
+      color: $white;
+    }
+  }
+}
