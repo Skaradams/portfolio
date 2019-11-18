@@ -1,6 +1,7 @@
 body {
   font-size: 16px;
   font-family: "Raleway";
+  letter-spacing: 2px;
 }
 
 .row, .column {
@@ -20,4 +21,10 @@ body {
 
 .no-flex {
   flex: none;
+}
+
+.container {
+  width: 900px;
+  margin: auto;
+  padding: 0.5em;
 }
