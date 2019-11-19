@@ -4,7 +4,7 @@ import profilePicture from "../assets/images/profile-picture.jpg"
 
 const Layout = ({ children }) => (
   <div className="column">
-    <div className="layout-header">
+    <div className="layout-header no-flex">
       <div className="container row">
         <div className="profile-picture no-flex" >
           <img src={ profilePicture } />
@@ -34,10 +34,11 @@ const Layout = ({ children }) => (
           </div>
         </div>
       </div>
-
     </div>
-    <div className="container">
-      { children }
+    <div className="layout-body column">
+      <div className="container">
+        { children }
+      </div>
     </div>
   </div>
 )

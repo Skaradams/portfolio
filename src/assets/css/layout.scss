@@ -1,5 +1,7 @@
 .layout-header {
   background: linear-gradient(0deg, rgba(45,49,66,0.8) 0%, $dark-blue 80%);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  z-index: 1;
 
   .profile-picture {
     img {
@@ -44,5 +46,12 @@
       padding-left: 1em;
       padding-top: 1em;
     }
+  }
+}
+.layout-body {
+  background: $silver;
+  .container {
+    background: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   }
 }
