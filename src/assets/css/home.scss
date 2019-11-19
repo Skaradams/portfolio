@@ -1,0 +1,29 @@
+.stack-ratio {
+  width: 100%;
+  height: 2em;
+  .stack-bar {
+    height: 100%;
+    position: relative;
+    &:after {
+      color: white;
+      position: absolute;
+      font-weight: bold;
+    }
+  }
+  .front-bar {
+    background: $orange;
+    &:after {
+      content: "Front-end";
+      left: 0.5em;
+      top: 0.4em;
+    }
+  }
+  .back-bar {
+    background: $blue;
+    &:after {
+      content: "Back-end";
+      right: 0.5em;
+      top: 0.4em;
+    }
+  }
+}

@@ -1,8 +1,9 @@
 import React from 'react'
+import StackRatio from "../components/StackRatio";
 
 const Home = () => (
   <div className="page page-home">
-    bonjour
+    <StackRatio />
   </div>
 )
 
