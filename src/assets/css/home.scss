@@ -33,6 +33,9 @@
   flex-shrink: 1;
   flex-basis: 300px;
   margin: 2em 0;
+  font-family: "Open sans";
+  letter-spacing: normal;
+  font-size: 1.2em;
   .info-wrapper {
     width: 6em;
     margin: auto;
@@ -45,16 +48,19 @@
       border-radius: 5em;
     }
     .icon-experience {
-      background-image: url('../images/icon-timeline.svg');
-      background-size: 6em;
-      background-position: center 0;
+      background-image: url('../images/icon-timeline-blue.svg');
+      background-size: 5em;
+      background-position: center 0.5em;
     }
     .icon-responsive {
-      background-image: url('../images/icon-responsive.svg');
+      background-image: url('../images/icon-responsive-blue.svg');
+      background-size: 4.5em;
+      background-position: center 0.8em;
     }
     .icon-code {
-      background-image: url('../images/icon-test.svg');
-      background-position: center 0.8em;
+      background-image: url('../images/icon-test-blue.svg');
+      background-size: 4em;
+      background-position: center 1.3em;
     }
   }
   .info-text {

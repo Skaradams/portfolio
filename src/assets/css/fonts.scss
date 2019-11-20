@@ -5,3 +5,11 @@
   src: local('Raleway'), local('Raleway'),
        url('../fonts/Raleway-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
 }
+
+@font-face {
+  font-family: 'Open sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open sans'), local('Open sans'),
+       url('../fonts/OpenSans-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+}
