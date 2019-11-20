@@ -1,73 +1,95 @@
-.stack-ratio {
-  width: 100%;
-  height: 2em;
-  border-radius: 5px;
-  overflow: hidden;
-  .stack-bar {
-    height: 100%;
-    position: relative;
-    &:after {
-      color: white;
-      position: absolute;
-      font-weight: bold;
+.page-home {
+  .stack-ratio {
+    width: 100%;
+    height: 2em;
+    border-radius: 5px;
+    overflow: hidden;
+    .stack-bar {
+      height: 100%;
+      position: relative;
+      &:after {
+        color: white;
+        position: absolute;
+        font-weight: bold;
+      }
+    }
+    .front-bar {
+      background: $orange;
+      &:after {
+        content: "Front-end";
+        left: 0.5em;
+        top: 0.4em;
+      }
+    }
+    .back-bar {
+      background: $blue;
+      &:after {
+        content: "Back-end";
+        right: 0.5em;
+        top: 0.4em;
+      }
     }
   }
-  .front-bar {
-    background: $orange;
-    &:after {
-      content: "Front-end";
-      left: 0.5em;
-      top: 0.4em;
+  .presentation-info {
+    flex-shrink: 1;
+    flex-basis: 300px;
+    margin: 2em 0;
+    font-family: "Open sans";
+    letter-spacing: normal;
+    font-size: 1.2em;
+    .info-wrapper {
+      width: 6em;
+      margin: auto;
+      .info-icon {
+        width: 100%;
+        height: 6em;
+        background-position: center 0.7em;
+        background-repeat: no-repeat;
+        border: 4px solid $blue;
+        border-radius: 5em;
+      }
+      .icon-experience {
+        background-image: url('../images/icon-timeline-blue.svg');
+        background-size: 5em;
+        background-position: center 0.5em;
+      }
+      .icon-responsive {
+        background-image: url('../images/icon-responsive-blue.svg');
+        background-size: 4.5em;
+        background-position: center 0.8em;
+      }
+      .icon-code {
+        background-image: url('../images/icon-test-blue.svg');
+        background-size: 4em;
+        background-position: center 1.3em;
+      }
+    }
+    .info-text {
+      margin-top: 0.5em;
+      text-align: center;
+      font-size: 0.8em;
+      padding-left: 2em;
+      padding-right: 2em;
     }
   }
-  .back-bar {
-    background: $blue;
-    &:after {
-      content: "Back-end";
-      right: 0.5em;
-      top: 0.4em;
+  .section-title {
+
+    h3 {
+      margin-left: -0.7em;
+      padding-left: 1em;
+      padding-bottom: 0.2em;
+      border-bottom: 2px solid $dark-blue;
+      display: inline-block;
+    }
+    .fa-icon {
+      padding: 0.5em 0.4em;
+      background: $dark-blue;
+      margin-bottom: -0.5em;
+      color: $white;
+      border-radius: 1em;
     }
   }
-}
-.presentation-info {
-  flex-shrink: 1;
-  flex-basis: 300px;
-  margin: 2em 0;
-  font-family: "Open sans";
-  letter-spacing: normal;
-  font-size: 1.2em;
-  .info-wrapper {
-    width: 6em;
-    margin: auto;
-    .info-icon {
-      width: 100%;
-      height: 6em;
-      background-position: center 0.7em;
-      background-repeat: no-repeat;
-      border: 4px solid $blue;
-      border-radius: 5em;
-    }
-    .icon-experience {
-      background-image: url('../images/icon-timeline-blue.svg');
-      background-size: 5em;
-      background-position: center 0.5em;
-    }
-    .icon-responsive {
-      background-image: url('../images/icon-responsive-blue.svg');
-      background-size: 4.5em;
-      background-position: center 0.8em;
-    }
-    .icon-code {
-      background-image: url('../images/icon-test-blue.svg');
-      background-size: 4em;
-      background-position: center 1.3em;
-    }
-  }
-  .info-text {
-    margin-top: 0.5em;
-    text-align: center;
-    font-size: 0.8em;
-    padding-left: 2em;
-    padding-right: 2em;
+  .section {
+    padding: 0 1em;
   }
 }

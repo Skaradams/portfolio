@@ -1,6 +1,8 @@
 import React from 'react'
 import StackRatio from "../components/StackRatio";
 import timelineIcon from "../assets/images/icon-timeline.svg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 const Home = () => (
   <div className="page page-home">
     <div className="row">
@@ -29,7 +31,16 @@ const Home = () => (
         </div>
       </div>
     </div>
-    <StackRatio />
+
+    <div className="section-title">
+      <FontAwesomeIcon icon="code" className="fa-icon" />
+      <h3>
+        Technologies utilisées
+      </h3>
+    </div>
+    <div className="section">
+      <StackRatio />
+    </div>
   </div>
 )
 

@@ -10,6 +10,8 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import './assets/css/index.scss';
 
+import './utils/IconLibrary';
+
 function App() {
   return (
     <div className="App column">
