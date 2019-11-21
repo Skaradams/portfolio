@@ -8,23 +8,22 @@
       height: 100%;
       position: relative;
       &:after {
+        content: attr(data-title);
         color: white;
         position: absolute;
         font-weight: bold;
       }
     }
-    .front-bar {
+    .left-bar {
       background: $orange;
       &:after {
-        content: "Front-end";
         left: 0.5em;
         top: 0.4em;
       }
     }
-    .back-bar {
+    .right-bar {
       background: $blue;
       &:after {
-        content: "Back-end";
         right: 0.5em;
         top: 0.4em;
       }
