@@ -40,6 +40,17 @@ const Layout = ({ children }) => (
         { children }
       </div>
     </div>
+    <div className="layout-footer no-flex">
+      <div className="container">
+        <div className="footer-wrapper row">
+          <div className="networks">
+            <h3>
+              Mes réseaux
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 )
 

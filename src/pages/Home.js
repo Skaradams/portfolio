@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import timelineIcon from "../assets/images/icon-timeline.svg";
 import atomLogo from "../assets/images/logo-atom.png";
 import gitLogo from "../assets/images/logo-git.png";
+import npmLogo from "../assets/images/logo-npm.png";
 import technos from '../data/technos';
 
 const Home = () => (
@@ -81,6 +82,7 @@ const Home = () => (
     <div className="section row toolbox">
       <img src={ atomLogo } className="no-flex" />
       <img src={ gitLogo } className="no-flex" />
+      <img src={ npmLogo } className="no-flex" />
     </div>
 
   </div>
