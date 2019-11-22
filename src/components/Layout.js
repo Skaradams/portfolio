@@ -11,17 +11,25 @@ const Layout = ({ children }) => (
         </div>
         <div className="layout-navigation column">
           <div className="layout-menu row">
-            <div className="no-flex active">
-              Présentation
+              <div className="no-flex active">
+                <Link to="/">
+                  Présentation
+                </Link>
+              </div>
+            <div className="no-flex">
+              <Link to="/experience">
+                Parcours
+              </Link>
             </div>
             <div className="no-flex">
-              Parcours
+              <Link to="/portfolio">
+                Réalisations
+              </Link>
             </div>
             <div className="no-flex">
-              Réalisations
-            </div>
-            <div className="no-flex">
-              Contact
+              <Link to="/contact">
+                Contact
+              </Link>
             </div>
           </div>
           <div className="layout-info">
