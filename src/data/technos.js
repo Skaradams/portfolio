@@ -5,7 +5,7 @@ const technos = {
       value: 90
     },
     {
-      title: "Javascript",
+      title: "Javascript (ES6)",
       value: 80
     },
     {
@@ -27,8 +27,9 @@ const technos = {
       value: 50
     },
     {
-      title: "Django (Django Rest Framework)",
+      title: "Django",
       value: 30
     }
   ]
 }
+export default technos;
