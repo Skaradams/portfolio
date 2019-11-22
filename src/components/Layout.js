@@ -1,8 +1,9 @@
 import React from 'react'
-import { Router, Link } from 'react-router-dom'
+import MenuLink from './MenuLink';
+import { withRouter } from 'react-router-dom';
 import profilePicture from "../assets/images/profile-picture.jpg"
 
-const Layout = ({ children }) => (
+const Layout = ({ children, location }) => (
   <div className="column">
     <div className="layout-header no-flex">
       <div className="container row">
@@ -11,26 +12,10 @@ const Layout = ({ children }) => (
         </div>
         <div className="layout-navigation column">
           <div className="layout-menu row">
-              <div className="no-flex active">
-                <Link to="/">
-                  Présentation
-                </Link>
-              </div>
-            <div className="no-flex">
-              <Link to="/experience">
-                Parcours
-              </Link>
-            </div>
-            <div className="no-flex">
-              <Link to="/portfolio">
-                Réalisations
-              </Link>
-            </div>
-            <div className="no-flex">
-              <Link to="/contact">
-                Contact
-              </Link>
-            </div>
+            <MenuLink title="Présentation" route="/" currentRoute={ location.pathname } />
+            <MenuLink title="Parcours" route="/experience" currentRoute={ location.pathname } />
+            <MenuLink title="Réalisations" route="/portfolio" currentRoute={ location.pathname } />
+            <MenuLink title="Contact" route="/contact" currentRoute={ location.pathname } />
           </div>
           <div className="layout-info">
             <h1>
@@ -62,4 +47,4 @@ const Layout = ({ children }) => (
   </div>
 )
 
-export default Layout;
+export default withRouter(Layout);
