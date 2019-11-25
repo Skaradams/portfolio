@@ -1,8 +1,8 @@
 import React from 'react'
 import StackRatio from "../components/StackRatio";
 import ProgressBar from "../components/ProgressBar";
+import SectionTitle from "../components/SectionTitle";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import timelineIcon from "../assets/images/icon-timeline.svg";
 import atomLogo from "../assets/images/logo-atom.png";
 import gitLogo from "../assets/images/logo-git2.png";
@@ -39,12 +39,10 @@ const Home = () => (
       </div>
     </div>
 
-    <div className="section-title">
-      <FontAwesomeIcon icon="code" className="fa-icon" />
-      <h3>
-        Technologies utilisées
-      </h3>
-    </div>
+    <SectionTitle icon="code">
+      Technologies utilisées
+    </SectionTitle>
+
     <div className="section">
       <StackRatio />
 
@@ -74,12 +72,11 @@ const Home = () => (
         </div>
       </div>
     </div>
-    <div className="section-title">
-      <FontAwesomeIcon icon="tools" className="fa-icon" />
-      <h3>
-        Outils
-      </h3>
-    </div>
+
+    <SectionTitle icon="tools">
+      Outils
+    </SectionTitle>
+    
     <div className="section row toolbox">
       <img src={ atomLogo } className="no-flex" />
       <img src={ npmLogo } className="no-flex" />

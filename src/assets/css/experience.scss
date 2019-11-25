@@ -1,6 +1,7 @@
 .experience-page {
   .experience-timeline {
     margin-bottom: 2em;
+    margin-top: 1em;
     .timeline-slot {
       justify-content: center;
       position: relative;
@@ -26,7 +27,7 @@
           z-index: 0;
           left: calc(-50% + 0.5em + 2px);
           top: calc(0.5em + 1px);
-          width: calc(100% - 1em - 2px);
+          width: calc(100% - 1em - 4px);
           border-bottom: 2px solid $silver;
           transition: all 0.2s ease-in;
         }
@@ -36,6 +37,8 @@
           border: 2px solid $dark-blue;
           background: $dark-blue;
 
+        }
+        &.active {
           &:after {
             border-bottom: 2px solid $dark-blue;
           }
@@ -47,8 +50,8 @@
     overflow: hidden;
     .pane {
       width: 100%;
-      transform: translate(-0);
-      transition: transform 0.2s ease-in;
+      transform: translate(0);
+      transition: transform 0.3s ease-in;
     }
   }
 }

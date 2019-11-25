@@ -1,7 +1,9 @@
 import React from 'react';
 import { Component } from 'react';
+import SectionTitle from '../components/SectionTitle';
 
-const panes = ['test', 'test2', 'test3']
+import experiences from '../data/experience';
+
 class Experience extends Component {
   state = {
     currentPane: 0
@@ -14,10 +16,10 @@ class Experience extends Component {
   render() {
     const paneStyle = `translate(-${ 100 * this.state.currentPane }%)`;
 
-    return(
+    return (
       <div className="page experience-page">
         <div className="experience-timeline row">
-          { panes.map((pane, index) => {
+          { experiences.map((experience, index) => {
             const active = this.state.currentPane >= index ? 'active' : '';
             const className = `timeline-dot no-flex ${ active }`
             return(
@@ -28,9 +30,11 @@ class Experience extends Component {
           }) }
         </div>
         <div className="experience-panes row">
-          { panes.map((pane, index) => (
+          { experiences.map((experience, index) => (
               <div className="pane no-flex" style={{ transform: paneStyle }} >
-                { pane }
+                <SectionTitle icon="code">
+                  { experience.company }
+                </SectionTitle>
               </div>
             )) }
 

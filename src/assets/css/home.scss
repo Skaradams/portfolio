@@ -89,27 +89,6 @@
       padding-right: 2em;
     }
   }
-  .section-title {
-
-    h3 {
-      margin-left: -0.7em;
-      padding-left: 1em;
-      padding-bottom: 0.2em;
-      border-bottom: 2px solid $dark-blue;
-      display: inline-block;
-    }
-    .fa-icon {
-      padding: 0.5em 0.4em;
-      background: $dark-blue;
-      margin-bottom: -0.5em;
-      color: $white;
-      border-radius: 1em;
-    }
-  }
-  .section {
-    padding: 0 1em;
-    margin-bottom: 1em;
-  }
   .toolbox {
 
     img {
@@ -120,7 +99,7 @@
         filter: grayscale(0);
         opacity: 1;
       }
-      margin-right: 1em; 
+      margin-right: 1em;
     }
   }
 }
