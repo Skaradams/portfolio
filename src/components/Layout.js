@@ -22,7 +22,7 @@ const Layout = ({ children, location }) => (
               Damien CORTICCHIATO
             </h1>
             <h2>
-              Full-stack developper
+              Full-stack developer
             </h2>
           </div>
         </div>

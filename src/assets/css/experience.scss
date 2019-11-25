@@ -1,0 +1,54 @@
+.experience-page {
+  .experience-timeline {
+    margin-bottom: 2em;
+    .timeline-slot {
+      justify-content: center;
+      position: relative;
+      &:first-child {
+        .timeline-dot {
+          &:after {
+            display: none;
+          }
+        }
+      }
+      .timeline-dot {
+        width: 1em;
+        height: 1em;
+        border: 2px solid $silver;
+        border-radius: 1em;
+        cursor: pointer;
+        background: $white;
+        z-index: 1;
+        transition: all 0.2s ease-in;
+        &:after {
+          content: "";
+          position: absolute;
+          z-index: 0;
+          left: calc(-50% + 0.5em + 2px);
+          top: calc(0.5em + 1px);
+          width: calc(100% - 1em - 2px);
+          border-bottom: 2px solid $silver;
+          transition: all 0.2s ease-in;
+        }
+
+
+        &:hover, &.active {
+          border: 2px solid $dark-blue;
+          background: $dark-blue;
+
+          &:after {
+            border-bottom: 2px solid $dark-blue;
+          }
+        }
+      }
+    }
+  }
+  .experience-panes {
+    overflow: hidden;
+    .pane {
+      width: 100%;
+      transform: translate(-0);
+      transition: transform 0.2s ease-in;
+    }
+  }
+}
