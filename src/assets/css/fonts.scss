@@ -13,3 +13,19 @@
   src: local('Open sans'), local('Open sans'),
        url('../fonts/OpenSans-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
 }
+
+@font-face {
+  font-family: 'Varela round';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Varela round'), local('Varela round'),
+       url('../fonts/VarelaRound-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Questrial';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Questrial'), local('Questrial'),
+       url('../fonts/Questrial-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+}
