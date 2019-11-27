@@ -1,10 +1,18 @@
 import React from 'react';
 import ProgressBar from "./ProgressBar";
 
-const StackRatio = ({position, value, title}) => (
+const StackRatio = ({valueFront, valueBack}) => (
   <div className="stack-ratio row">
-    <ProgressBar position="left" value="75" title="Front-end" />
-    <ProgressBar position="right" value="35" title="Back-end" />
+    {
+      valueFront ?
+      <ProgressBar position="left" value={ valueFront } title="Front-end" />
+      : ""
+    }
+    {
+      valueBack ?
+      <ProgressBar position="right" value={ valueBack } title="Back-end" />
+      : ""
+    }
   </div>
 )
 

@@ -44,7 +44,7 @@ const Home = () => (
     </SectionTitle>
 
     <div className="section">
-      <StackRatio />
+      <StackRatio valueBack="35" valueFront="65" />
 
       <div className="row">
         <div className="column tech-bars">
@@ -76,7 +76,7 @@ const Home = () => (
     <SectionTitle icon="tools">
       Outils
     </SectionTitle>
-    
+
     <div className="section row toolbox">
       <img src={ atomLogo } className="no-flex" />
       <img src={ npmLogo } className="no-flex" />

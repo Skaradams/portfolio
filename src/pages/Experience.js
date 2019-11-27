@@ -1,6 +1,7 @@
 import React from 'react';
 import { Component } from 'react';
 import SectionTitle from '../components/SectionTitle';
+import StackRatio from "../components/StackRatio";
 
 import experiences from '../data/experience';
 
@@ -31,13 +32,27 @@ class Experience extends Component {
         </div>
         <div className="experience-panes row">
           { experiences.map((experience, index) => (
-              <div className="pane no-flex" style={{ transform: paneStyle }} >
-                <SectionTitle icon="code">
-                  { experience.company }
-                </SectionTitle>
+            <div className="pane no-flex" style={{ transform: paneStyle }} >
+              <SectionTitle icon="code">
+                { experience.company }
+              </SectionTitle>
+              <div className="section experience-content">
+                <StackRatio valueBack={ experience.back } valueFront={ experience.front } />
+                <div className="description">
+                  { experience.description }
+                </div>
+                <div className="tasks">
+                  <ul>
+                    { experience.tasks.map(task => (
+                      <li>
+                        { task }
+                      </li>
+                    )) }
+                  </ul>
+                </div>
               </div>
-            )) }
-
+            </div>
+          )) }
         </div>
       </div>
     );

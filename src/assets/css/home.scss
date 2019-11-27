@@ -1,52 +1,5 @@
 .page-home {
-  .stack-ratio {
-    width: 100%;
-    border-radius: 5px;
-    overflow: hidden;
-    margin-bottom: 2em;
-  }
-  .stack-bar {
-    height: 2em;
-    position: relative;
-    &:after {
-      content: attr(data-title);
-      color: white;
-      position: absolute;
-      font-weight: bold;
-    }
-  }
-  .left-bar {
-    background: $orange;
-    &:after {
-      left: 0.5em;
-      top: 0.4em;
-    }
-  }
-  .right-bar {
-    background: $blue;
-    &:after {
-      right: 0.5em;
-      top: 0.4em;
-    }
-  }
-  .tech-bars {
-    filter: grayscale(40%);
-    opacity: 0.8;
-    &> * {
-      margin-bottom: 1em;
-      justify-content: flex-end;
-    }
-    .left-bar {
-      border-top-right-radius: 5px;
-      border-bottom-right-radius: 5px;
-    }
-    .right-bar {
-
-      flex: none;
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px;
-    }
-  }
+  
   .presentation-info {
     flex-shrink: 1;
     flex-basis: 300px;

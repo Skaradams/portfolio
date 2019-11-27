@@ -13,7 +13,7 @@ const Layout = ({ children, location }) => (
         <div className="layout-navigation column">
           <div className="layout-menu row">
             <MenuLink title="Présentation" route="/" currentRoute={ location.pathname } />
-            <MenuLink title="Parcours" route="/experience" currentRoute={ location.pathname } />
+            <MenuLink title="Experience" route="/experience" currentRoute={ location.pathname } />
             <MenuLink title="Réalisations" route="/portfolio" currentRoute={ location.pathname } />
             <MenuLink title="Contact" route="/contact" currentRoute={ location.pathname } />
           </div>
