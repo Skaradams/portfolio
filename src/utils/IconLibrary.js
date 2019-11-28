@@ -1,10 +1,14 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faCode } from '@fortawesome/free-solid-svg-icons';
-import { faTerminal } from '@fortawesome/free-solid-svg-icons';
-import { faTools } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCode,
+  faTerminal,
+  faTools,
+  faBriefcase
+} from '@fortawesome/free-solid-svg-icons';
 
 library.add(
   faCode,
   faTerminal,
-  faTools
+  faTools,
+  faBriefcase
 );

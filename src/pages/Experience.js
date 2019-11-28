@@ -33,7 +33,7 @@ class Experience extends Component {
         <div className="experience-panes row">
           { experiences.map((experience, index) => (
             <div className="pane no-flex" style={{ transform: paneStyle }} >
-              <SectionTitle icon="code">
+              <SectionTitle icon="briefcase">
                 { experience.company }
               </SectionTitle>
               <div className="section experience-content">
