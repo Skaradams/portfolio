@@ -3,12 +3,20 @@ import {
   faCode,
   faTerminal,
   faTools,
-  faBriefcase
+  faBriefcase,
+  faArrowRight,
+  faCheck
 } from '@fortawesome/free-solid-svg-icons';
+
+import {
+
+} from '@fortawesome/free-regular-svg-icons';
 
 library.add(
   faCode,
   faTerminal,
   faTools,
-  faBriefcase
+  faBriefcase,
+  faArrowRight,
+  faCheck
 );

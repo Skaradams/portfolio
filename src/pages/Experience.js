@@ -2,6 +2,7 @@ import React from 'react';
 import { Component } from 'react';
 import SectionTitle from '../components/SectionTitle';
 import StackRatio from "../components/StackRatio";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import experiences from '../data/experience';
 
@@ -26,6 +27,7 @@ class Experience extends Component {
             return(
               <div className="timeline-slot row">
                 <div className={ className } onClick={ () => { this.switchPane(index) } }></div>
+                <div className="timeline-title">{ experience.title }</div>
               </div>
             );
           }) }
@@ -36,6 +38,10 @@ class Experience extends Component {
               <SectionTitle icon="briefcase">
                 { experience.company }
               </SectionTitle>
+              <div className="experience-product">
+                <FontAwesomeIcon icon="arrow-right" className="fa-icon"/>
+                { experience.product }
+              </div>
               <div className="section experience-content">
                 <StackRatio valueBack={ experience.back } valueFront={ experience.front } />
                 <div className="description">
@@ -44,8 +50,11 @@ class Experience extends Component {
                 <div className="tasks">
                   <ul>
                     { experience.tasks.map(task => (
-                      <li>
-                        { task }
+                      <li className="row">
+                        <FontAwesomeIcon icon="check" className="fa-icon no-flex"/>
+                        <span>
+                          { task }
+                        </span>
                       </li>
                     )) }
                   </ul>

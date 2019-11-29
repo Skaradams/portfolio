@@ -7,10 +7,9 @@ const experience = [
     description: "Bonne montée en compétence sur les technos front-end, notamment en responsive avec flex-box et sur l'utilisation d'un framework coté front (ici Angular).",
     product: "Application Disclose, une plateforme collaborative pour les journalistes",
     tasks: [
-      "Développement de l'application Disclose, une plateforme collaborative pour les journalistes",
       "Conception de l'API restful",
       "Maintenance de l'API, tests et CI",
-      "Réalisation de composants d'UX : éditeur de texte from scratch (inspiré de Medium), "
+      "Réalisation de composants d'UX, notamment un éditeur de texte from scratch (inspiré de Medium)"
     ]
   },
   {
