@@ -5,12 +5,16 @@ import {
   faTools,
   faBriefcase,
   faArrowRight,
-  faCheck
+  faCheck,
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
 
 } from '@fortawesome/free-regular-svg-icons';
+
+import {
+  faGithub
+} from '@fortawesome/free-brands-svg-icons';
 
 library.add(
   faCode,
@@ -18,5 +22,6 @@ library.add(
   faTools,
   faBriefcase,
   faArrowRight,
-  faCheck
+  faCheck,
+  faGithub
 );
