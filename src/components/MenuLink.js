@@ -8,11 +8,11 @@ class MenuLink extends Component {
     const active = currentRoute === route ? 'active' : '';
     const className = `no-flex ${ active }`;
     return(
-      <div className={ className }>
-        <Link to={ route }>
-          { title }
-        </Link>
-      </div>
+      <Link to={ route } className={ className }>
+        <div >
+            { title }
+        </div>
+      </Link>
     )
   }
 }
