@@ -14,34 +14,54 @@ class Contact extends Component {
     this.setState(newState);
   }
   submitForm = (event) => {
+    event.preventDefault();
     const action = '/send_email'
     const api_url = process.env.NODE_ENV === 'production' ?
       `https://dc-portfolio-backend.herokuapp.com${ action }` :
       `http://localhost:4000${ action }`
-    console.log(api_url);
-    axios.post(api_url, this.state)
-    event.preventDefault();
+    console.log(this.state);
+    // axios.post(api_url, this.state)
+    axios({
+      method: 'post',
+      url: api_url,
+      // data: this.state
+    })
   }
   render() {
     return (
       <div className="page contact-page">
-        <form onSubmit={ this.submitForm }>
-          <div>
+        <h3>
+          Feel free to reach out
+        </h3>
+        <form className="contact-form" onSubmit={ this.submitForm }>
+          <div className="contact-field">
+            <input
+              type="text"
+              name="email"
+              placeholder="Your email"
+              onChange={ this.changeValue }
+              />
+          </div>
+          <div className="contact-field">
             <input
               type="text"
               name="subject"
-              placeholder="subject"
+              placeholder="Subject"
               onChange={ this.changeValue }
             />
           </div>
-          <div>
+          <div className="contact-field">
             <textarea
               name="body"
+              placeholder="Message"
+              className="contact-field"
               onChange={ this.changeValue }
             />
           </div>
-          <div>
-            <input type="submit" />
+          <div className="row">
+            <button type="submit" className="no-flex">
+              Envoyer
+            </button>
           </div>
         </form>
       </div>
